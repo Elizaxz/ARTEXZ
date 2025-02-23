@@ -64,8 +64,9 @@
     <main class="contenedor sombra">
       <h2>Servicios</h2>
       <div class="servicios">
-        <section>
+        <section class="servicio">
           <h3>DIBUJOS PERSONALIZADOS</h3>
+          <div class="iconos">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -88,14 +89,16 @@
             <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
             <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
           </svg>
+        </div>
           <p>
             Da vida a tus ideas con arte exclusivo.Retratos, paisajes y obras al
             óleo totalmente personalizadas
           </p>
         </section>
 
-        <section>
+        <section class="servicio">
           <h3>OBRAS</h3>
+          <div class="iconos">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -114,6 +117,7 @@
             <path d="M4 14h6v6h-6z" />
             <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
           </svg>
+        </div>
           <p>
             Artexz es un espacio innovador que impulsa a artistas emergentes en
             en el mundo digital, mas que una galeria es un movimiento creativo
@@ -121,8 +125,9 @@
           </p>
         </section>
 
-        <section>
+           <section class="servicio">
           <h3>PRINTS</h3>
+          <div class="iconos">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -146,6 +151,7 @@
             <path d="M7 13l3.644 -3.644a1.21 1.21 0 0 1 1.712 0l3.644 3.644" />
             <path d="M15 12l1.644 -1.644a1.21 1.21 0 0 1 1.712 0l2.644 2.644" />
           </svg>
+        </div>
           <p>
             Reproducción de una obra de arte original, impresa en alta
             calidad,papel o lienzo
@@ -153,44 +159,46 @@
         </section>
       </div>
       <!--cierre de div de class servicios-->
-    </main>
+    
 
     <section>
       <h2>Contacto</h2>
 
-      <form>
+      <form class="formulario">
         <fieldset>
           <legend>Contactanos llenando todos los campos</legend>
-
-          <div>
+          <div class="contenedor-campos">
+          <div class="campo">
             <label>Nonbre</label>
-            <input type="text" placeholder="Tu nombre" />
+            <input class="imput-text" ="text" placeholder="Tu nombre" />
           </div>
 
-          <div>
+          <div class="campo">
             <label>Telefono</label>
-            <input type="tel" placeholder="Tu telefono" />
+            <input class="imput-text" type="tel" placeholder="Tu telefono" />
           </div>
 
-          <div>
+          <div class="campo">
             <label>Correo</label>
-            <input type="email" placeholder="Tu Email" />
+            <input class="imput-text" type="email" placeholder="Tu Email" />
           </div>
 
-          <div>
+          <div class="campo">
             <label>Mensaje</label>
-            <textarea></textarea>
+            <textarea class="imput-text"></textarea>
+          </div>
+        </div><!--cierre de contenedor de los campos-->
+
+          <div class="alinear-derecha flex">
+            <input class="boton w-100" type="submit" value="Enviar" />
           </div>
 
-          <div>
-            <input type="submit" value="Enviar" />
-          </div>
         </fieldset>
       </form>
     </section>
-
-    <footer>
-      <p>Todos los derechos reservados. Eliza XZ Freelancer.</p>
+  </main>
+    <footer class="footer">
+      <p>Todos los derechos reservados. Eliza XZ.</p>
     </footer>
   </body>
 </html>
